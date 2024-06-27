@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class UserDto {          //user for data transfer
+public class UserDto {          //user for data transfer 
 	private int id;
 	private String name;
 	private String email;

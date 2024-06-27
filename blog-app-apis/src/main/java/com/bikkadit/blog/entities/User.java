@@ -16,7 +16,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class User {
+public class User {                                  // it is corresponding to the data base
 	
 	@Id 
 	@GeneratedValue(strategy = GenerationType.AUTO)
