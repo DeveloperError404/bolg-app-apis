@@ -15,7 +15,7 @@ import com.bikkadit.blog.services.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 
-	// we need repository to createUser,UpdateUser,DeleteUser
+	// we need repository to createUser,UpdateUser,DeleteUser 
 	@Autowired
 	private UserRepo userRepo;
 
