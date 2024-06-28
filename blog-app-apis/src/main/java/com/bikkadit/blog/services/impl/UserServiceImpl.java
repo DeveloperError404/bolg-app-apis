@@ -1,6 +1,7 @@
 package com.bikkadit.blog.services.impl;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -56,11 +57,24 @@ public class UserServiceImpl implements UserService {
 
 	}
 
+	
+	
+	
+	
 	public List<UserDto> getAllUsers() {
-		// TODO Auto-generated method stub
-		return null;
+		List<User> users = this.userRepo.findAll();
+		
+		//here we need to send list of user to userDto
+		//so we need to convert user to Dto
+		
+		List<UserDto> userDtos = users.stream().map(user->this.userToDto(user)).collect(Collectors.toList());
+		
+		return userDtos;
 	}
 
+	
+	
+	
 	public void deleteUser(Integer userId) {
 		// TODO Auto-generated method stub
 
