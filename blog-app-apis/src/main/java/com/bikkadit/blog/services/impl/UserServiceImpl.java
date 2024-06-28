@@ -52,9 +52,6 @@ public class UserServiceImpl implements UserService {
 																							// exceotion so creste user
 																							// define exception
 
-		
-		
-		
 		return this.userToDto(user);
 
 	}
