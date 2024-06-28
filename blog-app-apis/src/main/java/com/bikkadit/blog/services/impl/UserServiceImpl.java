@@ -19,68 +19,58 @@ public class UserServiceImpl implements UserService {
 	private UserRepo userRepo;
 
 	public UserDto createUser(UserDto userDto) {
-		 User user = this.dtoToUser(userDto);
+		User user = this.dtoToUser(userDto);
 		User savedUser = this.userRepo.save(user);
 
 		return this.userToDto(savedUser);
 
 	}
 
-	
-	
-	
-	
-	
-	
 	public UserDto updatUser(UserDto userDto, Integer userId) {
-		User user=this.userRepo.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User", "id",userId));         //here we get the error bcz we not created the class so go in exceptions package and create class for that
-		
-		user.setName(userDto.getName());
+		User user = this.userRepo.findById(userId)
+				.orElseThrow(() -> new ResourceNotFoundException("User", "id", userId)); // here we get the error bcz we
+																							// not created the class so
+																							// go in exceptions package
+																							// and create class for that
+
+		user.setName(userDto.getName()); // first we get then here we set
 		user.setEmail(userDto.getEmail());
 		user.setPassword(user.getPassword());
 		user.setAbout(userDto.getAbout());
-		User updatedUser = this.userRepo.save(user);
-		UserDto  userDto1 = this.userToDto(updatedUser);
-		
+		User updatedUser = this.userRepo.save(user); // then convert into DTO
+		UserDto userDto1 = this.userToDto(updatedUser);
+
 		return userDto1;
 	}
 
-	
-	
-	
-	
-	
-	
 	public UserDto getUserById(Integer userId) {
-		// TODO Auto-generated method stub
-		return null;
+
+		User user = this.userRepo.findById(userId)
+				.orElseThrow(() -> new ResourceNotFoundException("User", "Id", userId)); // or else throw means suppose
+																							// we didnt get o/p then we
+																							// need to throw that
+																							// exceotion so creste user
+																							// define exception
+
+		
+		
+		
+		return this.userToDto(user);
+
 	}
 
-	
-	
-	
-	
-	
 	public List<UserDto> getAllUsers() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	
-	
-	
-	
-	
 	public void deleteUser(Integer userId) {
 		// TODO Auto-generated method stub
 
 	}
 
-	
-	
-	//model mapper to convert dto to entity
-	
-	
+	// model mapper to convert dto to entity
+
 	private User dtoToUser(UserDto userDto) {
 		User user = new User();
 		user.setId(userDto.getId());
@@ -92,10 +82,8 @@ public class UserServiceImpl implements UserService {
 
 	}
 
-	
-	//model mapper to convert entity to dto
-	
-	
+	// model mapper to convert entity to dto
+
 	public UserDto userToDto(User user) {
 		UserDto userDto = new UserDto();
 		userDto.setId(user.getId());
