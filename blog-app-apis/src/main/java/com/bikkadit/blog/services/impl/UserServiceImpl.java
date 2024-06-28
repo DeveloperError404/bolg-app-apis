@@ -57,27 +57,25 @@ public class UserServiceImpl implements UserService {
 
 	}
 
-	
-	
-	
-	
 	public List<UserDto> getAllUsers() {
 		List<User> users = this.userRepo.findAll();
-		
-		//here we need to send list of user to userDto
-		//so we need to convert user to Dto
-		
-		List<UserDto> userDtos = users.stream().map(user->this.userToDto(user)).collect(Collectors.toList());
-		
+
+		// here we need to send list of user to userDto
+		// so we need to convert user to Dto
+
+		List<UserDto> userDtos = users.stream().map(user -> this.userToDto(user)).collect(Collectors.toList());
+
 		return userDtos;
 	}
 
-	
-	
-	
 	public void deleteUser(Integer userId) {
-		// TODO Auto-generated method stub
+		// First get the user
 
+		User user = this.userRepo.findById(userId)
+				.orElseThrow(() -> new ResourceNotFoundException("User", "Id", userId));
+
+		// for delete user
+		this.userRepo.delete(user);
 	}
 
 	// model mapper to convert dto to entity
