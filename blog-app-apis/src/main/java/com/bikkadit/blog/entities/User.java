@@ -19,7 +19,7 @@ import lombok.Setter;
 public class User {                                  // it is corresponding to the data base
 	
 	@Id 
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	
