@@ -1,5 +1,6 @@
 package com.bikkadit.blog.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +52,11 @@ public class UserController {
 		return new ResponseEntity<ApiResponse>(new ApiResponse("User Deleted Successfully", true), HttpStatus.OK);
 	}
 
-	// GET-get user
+	// GET-get all user
+	@GetMapping("/user")
+	ResponseEntity<List<UserDto>> getAllUsers() {
+		return ResponseEntity.ok(this.userService.getAllUsers());
+
+	}
 
 }
