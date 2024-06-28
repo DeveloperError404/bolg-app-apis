@@ -59,4 +59,11 @@ public class UserController {
 
 	}
 
+	// GET-get single user
+	@GetMapping("/user{userId}")
+	ResponseEntity<UserDto> getSingleUsers(@PathVariable Integer userId) {
+		return ResponseEntity.ok(this.userService.getUserById(userId));
+
+	}
+
 }
