@@ -19,6 +19,8 @@ import com.bikkadit.blog.payloads.ApiResponse;
 import com.bikkadit.blog.payloads.UserDto;
 import com.bikkadit.blog.services.UserService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api")
 public class UserController {
@@ -29,7 +31,7 @@ public class UserController {
 	// POST-create user
 	@PostMapping("/user") // it will execute when we call ("/api/users/") in postman
 
-	public ResponseEntity<UserDto> createUser(@RequestBody UserDto userDto) { // we create Dto because we will not
+	public ResponseEntity<UserDto> createUser(@Valid  @RequestBody UserDto userDto) { // we create Dto because we will not
 																				// expose directly from here
 
 		UserDto createUserDto = this.userService.createUser(userDto);
@@ -39,7 +41,7 @@ public class UserController {
 
 	// PUT-Update user
 	@PutMapping("/user/{userId}") // {userId} this is path uri variable
-	public ResponseEntity<UserDto> updateUser(@RequestBody UserDto userDto, @PathVariable("userId") Integer uid) {
+	public ResponseEntity<UserDto> updateUser(@Valid @RequestBody UserDto userDto, @PathVariable("userId") Integer uid) {
 		UserDto updatedUser = this.userService.updatUser(userDto, uid);
 		return ResponseEntity.ok(updatedUser);
 
