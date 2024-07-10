@@ -1,0 +1,45 @@
+2024-07-09T17:43:36.968+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] c.bikkadit.blog.BlogAppApisApplication   : Starting BlogAppApisApplication using Java 21.0.3 with PID 11812 (C:\Users\Shiv\git\bolg-app-apis\blog-app-apis\target\classes started by Shiv in C:\Users\Shiv\git\bolg-app-apis\blog-app-apis)
+2024-07-09T17:43:36.973+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] c.bikkadit.blog.BlogAppApisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T17:43:37.092+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-09T17:43:37.094+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-09T17:43:38.407+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T17:43:38.660+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 219 ms. Found 2 JPA repository interfaces.
+2024-07-09T17:43:39.643+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-07-09T17:43:39.672+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T17:43:39.672+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T17:43:39.779+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T17:43:39.780+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2685 ms
+2024-07-09T17:43:40.065+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T17:43:40.169+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T17:43:40.237+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T17:43:40.845+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T17:43:40.902+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T17:43:41.509+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fae75e4
+2024-07-09T17:43:41.513+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T17:43:41.631+05:30  WARN 11812 --- [blog-app-apis] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T17:43:41.634+05:30  WARN 11812 --- [blog-app-apis] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-09T17:43:43.344+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T17:43:43.444+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T17:43:44.230+05:30  WARN 11812 --- [blog-app-apis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T17:43:44.954+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T17:43:45.057+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-07-09T17:43:45.085+05:30  INFO 11812 --- [blog-app-apis] [restartedMain] c.bikkadit.blog.BlogAppApisApplication   : Started BlogAppApisApplication in 8.92 seconds (process running for 10.591)
+2024-07-09T17:44:34.171+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T17:44:34.172+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T17:44:34.174+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-09T17:44:42.290+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-4] c.b.blog.controller.UserController       : Requesting to create a User
+2024-07-09T17:44:42.291+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-4] c.b.blog.services.impl.UserServiceImpl   : Initiating the dao call to create user
+2024-07-09T17:44:42.580+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-4] c.b.blog.services.impl.UserServiceImpl   : Completed the dao call to create a User
+2024-07-09T17:44:42.583+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-4] c.b.blog.controller.UserController       : Completed the request to create a User
+2024-07-09T17:44:51.191+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-3] c.b.blog.controller.UserController       : Requesting to retrive all Users
+2024-07-09T17:44:51.191+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-3] c.b.blog.controller.UserController       : Completed the request to get all Users
+2024-07-09T17:44:51.429+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-3] c.b.blog.services.impl.UserServiceImpl   : Initiating the dao call to  user of get all Users
+2024-07-09T17:44:51.431+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-3] c.b.blog.services.impl.UserServiceImpl   : Completed the dao call to get all Users
+2024-07-09T17:51:33.220+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-7] c.b.blog.controller.UserController       : Requesting to create a User
+2024-07-09T17:51:33.221+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-7] c.b.blog.services.impl.UserServiceImpl   : Initiating the dao call to create user
+2024-07-09T17:51:33.262+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-7] c.b.blog.services.impl.UserServiceImpl   : Completed the dao call to create a User
+2024-07-09T17:51:33.263+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-7] c.b.blog.controller.UserController       : Completed the request to create a User
+2024-07-09T17:51:39.793+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-8] c.b.blog.controller.UserController       : Requesting to retrive all Users
+2024-07-09T17:51:39.793+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-8] c.b.blog.controller.UserController       : Completed the request to get all Users
+2024-07-09T17:51:39.809+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-8] c.b.blog.services.impl.UserServiceImpl   : Initiating the dao call to  user of get all Users
+2024-07-09T17:51:39.815+05:30  INFO 11812 --- [blog-app-apis] [http-nio-9090-exec-8] c.b.blog.services.impl.UserServiceImpl   : Completed the dao call to get all Users
